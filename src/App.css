@@ -1,22 +1,132 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  flex: 1;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #e9ebee;
+}
+.choice-card {
+  flex: 1;
+  display: flex;
+  margin: 10px;
+  font-size: 3em;
+  padding: 0 40px;
+  font-weight: 300;
+  text-align: center;
+  border-radius: 25px;
+  flex-direction: column;
   align-items: center;
+  border: 1px solid black;
+  background-color: white;
+  justify-content: space-around;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img {
+  width: 250px;
+  height: 250px;
+}
+h1 {
+  font-size: 50px;
+}
+.winner {
+  color: green;
+  border: 10px solid green;
+}
+
+.loser {
+  color: red;
+  border: 10px solid red;
+}
+
+.tie {
+  color: black;
+  border: 10px solid black;
+}
+
+.main-game{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+}
+
+.user-play > button{
+  margin: 10px;
+}
+
+#GarfieldIMG{
+  width: 64px !important;
+  height: 64px !important;
+  transition-duration: 1s;
+}
+
+#GarfieldIMG:hover{
+  transform: rotate(-360deg);
+  transition-duration: 3s;
+}
+
+.navbar{
+  background-color: rgb(255, 132, 31);
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  height: 10vh;
+}
+
+#history-Button{
+  outline: none;
+  color: white;
+  border: 1px solid transparent;
+  margin: 5px;
+}
+
+
+.victory{
+  background-color: green;
+}
+
+.Defeat{
+  background-color: red;
+}
+
+.win-win{
+  background-color: lightgrey;
+}
+
+.history{
+  width: 60vw;
+}
+
+.historyBoard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#input-username{
+  margin-right: 5px;
+  background-color: white;
+  border-radius: 40px;
+  padding: 10px;
+  border: 5px solid white;
+}
+
+#input-username:focus{
+  outline: none;
+  margin-right: 5px;
+}
+
+#username-button{
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 30px;
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+#username-p{
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
 }
