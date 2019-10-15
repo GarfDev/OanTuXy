@@ -1,5 +1,7 @@
 Made with love by GarDev.
+
 Netlify link: https://xenodochial-carson-38e637.netlify.com
+
 ### Accomplishments 🎯🥇🏆
 - [x] User can see three buttons labeled Rock, Paper, Scissors.
 - [x] User can press one of the buttons to make their choice.
